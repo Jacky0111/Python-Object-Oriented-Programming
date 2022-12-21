@@ -71,10 +71,24 @@ class Employee:
 
 ## 1 Class
 ### 1.1 What is Class?
+```
+class myClass():
+```
 
 ## 2 Method
 ### 2.1 What is Method?
-### Difference between Class and Method
+```
+class myClass():
+    def method1(self):
+        print('This is method 1")
+        
+    def method2(self):
+        print('This is method 2")
+```
+
+### 2.2 Difference between Class and Method
+
+
 
 ## 3 Constructor (`__init__`)
 
