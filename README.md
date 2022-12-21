@@ -63,15 +63,18 @@ class Employee:
         self.age = age
         self.salary = salary
         
-    def employeeDetails(self):  # Instance Method
+    def employeeInfo(self):  # Instance Method
         print('Employee ID: ' + self.emp_id)
         print('Age: ' + self.age)
         print('Salary: ' + self.salary)
 ```
 
 ## 1 Class
+### 1.1 What is Class?
 
 ## 2 Method
+### 2.1 What is Method?
+### Difference between Class and Method
 
 ## 3 Constructor (__init)
 
