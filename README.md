@@ -10,11 +10,17 @@
 
 ## 0 Introduction to OOP
 ### 0.1 What is OOP?
+<p align="justify">
 The concept of object-oriented programming (OOP) is primarily intended for large-scale and complex software. OOP makes a programme more extendable and readable, thereby reducing programming to the level of building blocks.
+</p>
 
+<p align="justify">
 Secondly, OOP encapsulates data and methods related to operating data into objects, as well as the way of organizing code and data is closer to human thinking, thus greatly enhancing the efficiency of programming.
+</p>
 
+<p align="justify">
 Python fully adopts the concept of object-oriented which is a real OOP language. Subsequently, completely supports object-oriented fundamental features, such as inheritance, polymorphism, encapsulation, etc.
+</p>
 
 ### 0.2 Difference between Procedure-Oriented and Object-Oriented
 | Procedure-Oriented                                                  | Differences  | Object-Oriented                                           |
