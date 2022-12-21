@@ -32,6 +32,43 @@ The concept of object-oriented programming (OOP) is primarily intended for large
 With the evolution of programming language, it has become more and more sophisticated in order to resolve real-life issue. "Array" has been defined along with the expansion of data. Following by the complexity of data type, "Structure" has been defined for complicated data type maintenance. Subsequently, "Object" has been defined for handling huge project in real-life where it helps in enhancing logic of data processing and making it more manageable.
 </p>
 
+1. **Simple Data** - Refers to numbers, alphabets at the beginning phase.
+* 4, 50, 2.43, 11
+2. **Array** - Refers to group data of the same data type.
+* Integer array: [10, 20, 30]
+* Floating point array: [40.7, 123.45, 3.14157]
+* String array: ['a', 'bc', 'def', 'Hello']
+3. **Structure** - Combination of several data types.
+* Example from C language:
+```
+struct Employee
+{
+	char emp_id[4];
+	char name[20];
+	int age;
+	double salary
+	char department[15];
+};
+```
+4. **Object** - Combination of several data types and several methods:
+* Example from Python language:
+```
+class Employee:
+    emp_id = 'A123'     # Class Attribute
+    age = 0         
+    salary = 0      
+    
+    def __init__(self, emp_id, age, salary):
+        self.emp_id = emp_id    # Instance Attribute
+        self.age = age
+        self.salary = salary
+        
+    def employeeDetails(self):  # Instance Method
+        print('Employee ID: ' + self.emp_id)
+        print('Age: ' + self.age)
+        print('Salary: ' + self.salary)
+```
+
 ## 1 Class
 
 ## 2 Method
