@@ -1,12 +1,12 @@
 # Python-Object-Oriented-Programming
 
-0. [Introduction to OOP](https://github.com/Jacky0111/Python-Object-Oriented-Programming#introduction-to-oop)
-1. [Class](https://github.com/Jacky0111/Python-Object-Oriented-Programming#class)
-2. [Method](https://github.com/Jacky0111/Python-Object-Oriented-Programming#method)
-3. [Constructor (__init)](https://github.com/Jacky0111/Python-Object-Oriented-Programming#Constructor-(__init))
-4. [Inheritance](https://github.com/Jacky0111/Python-Object-Oriented-Programming#inheritance)
-5. [Encapsulation](https://github.com/Jacky0111/Python-Object-Oriented-Programming#encapsulation)
-6. [Polymorphism](https://github.com/Jacky0111/Python-Object-Oriented-Programming#polymorphism)
+0. [Introduction to OOP](https://github.com/Jacky0111/Python-Object-Oriented-Programming#0-introduction-to-oop)
+1. [Class](https://github.com/Jacky0111/Python-Object-Oriented-Programming#1-class)
+2. [Method](https://github.com/Jacky0111/Python-Object-Oriented-Programming#2-method)
+3. [Constructor (__init)](https://github.com/Jacky0111/Python-Object-Oriented-Programming#3-onstructor-(__init))
+4. [Inheritance](https://github.com/Jacky0111/Python-Object-Oriented-Programming#4-inheritance)
+5. [Encapsulation](https://github.com/Jacky0111/Python-Object-Oriented-Programming#5-encapsulation)
+6. [Polymorphism](https://github.com/Jacky0111/Python-Object-Oriented-Programming#6-polymorphism)
 
 ## 0 Introduction to OOP
 ### 0.1 Difference between Object Oriented and Procedure Oriented
