@@ -3,7 +3,7 @@
 0. [Introduction to OOP](https://github.com/Jacky0111/Python-Object-Oriented-Programming#0-introduction-to-oop)
 1. [Class](https://github.com/Jacky0111/Python-Object-Oriented-Programming#1-class)
 2. [Method](https://github.com/Jacky0111/Python-Object-Oriented-Programming#2-method)
-3. [Constructor (__init)](https://github.com/Jacky0111/Python-Object-Oriented-Programming#3-onstructor-(__init))
+3. [Constructor (__init)](https://github.com/Jacky0111/Python-Object-Oriented-Programming#3-constructor-(`__init__`))
 4. [Inheritance](https://github.com/Jacky0111/Python-Object-Oriented-Programming#4-inheritance)
 5. [Encapsulation](https://github.com/Jacky0111/Python-Object-Oriented-Programming#5-encapsulation)
 6. [Polymorphism](https://github.com/Jacky0111/Python-Object-Oriented-Programming#6-polymorphism)
@@ -76,7 +76,7 @@ class Employee:
 ### 2.1 What is Method?
 ### Difference between Class and Method
 
-## 3 Constructor (__init)
+## 3 Constructor (`__init__`)
 
 ## 4 Inheritance
 
