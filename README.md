@@ -9,7 +9,14 @@
 6. [Polymorphism](https://github.com/Jacky0111/Python-Object-Oriented-Programming#6-polymorphism)
 
 ## 0 Introduction to OOP
-### 0.1 Difference between Object Oriented and Procedure Oriented
+### 0.1 Difference between Procedure-Oriented and Object-Oriented
+| Procedure-Oriented             | Differences  | Object-Oriented                  |
+|--------------------------------|:------------:|----------------------------------|
+| Divides into methods           |   Division   | Divides into classes and objects |
+| Appropriate for simple program |              | Appropriate for complex program  |
+| Algorithm                      | Dealing with | Data                             |
+|                                |              |                                  |
+|                                |              |                                  |
 ### 0.2 Revolution of OOP
 
 ## 1 Class
