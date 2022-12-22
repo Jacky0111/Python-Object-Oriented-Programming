@@ -91,9 +91,17 @@ class myClass():
 
 
 ## 3 Constructor (`__init__`)
-
+```
+def __init__(self):
+```
 ## 4 Inheritance
-
+```
+class human(object):
+    pass
+   
+class boy(human):
+    pass
+```
 ## 5 Encapsulation
 
 ## 6 Polymorphism
