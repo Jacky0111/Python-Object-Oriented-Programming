@@ -86,8 +86,18 @@ class myClass():
         print('This is method 2")
 ```
 
-### 2.2 Difference between Class and Method
-
+### 2.2 Class Method
+```
+@classmethod
+def method1(cls, age):
+    pass
+```
+### 2.3 Static Method
+```
+@staticmethod
+def method2(age):
+    pass
+```
 
 
 ## 3 Constructor (`__init__`)
