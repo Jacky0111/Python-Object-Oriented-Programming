@@ -108,11 +108,11 @@ class myClass():
         print('This is method 2")
 ```
 
-In this example, **method1** and **method2** are methods of the **myClass** class.
+In this example, `method1` and `method2` are methods of the `myClass` class.
 
 ### 2.2 Class Method
 
-A class method is a method that is bound to the class and not the instance of the class. It takes the class as its first argument, usually named cls, instead of self. It can be defined using the **@classmethod** decorator. Here is an example:
+A class method is a method that is bound to the class and not the instance of the class. It takes the class as its first argument, usually named cls, instead of self. It can be defined using the `@classmethod` decorator. Here is an example:
 
 ```
 @classmethod
@@ -120,7 +120,7 @@ def method1(cls, age):
     print('This is method 1 and the age is', age)
 ```
 
-In this example, **method1** is a static method of the **myClass** class that takes an argument **age**.
+In this example, `method1` is a static method of the `myClass` class that takes an argument `age`.
 
 ### 2.3 Static Method
 ```
@@ -129,26 +129,88 @@ def method2(age):
     print('This is method 2 and the age is', age)
 ```
 
-In this example, **method2** is a static method of the **myClass** class that takes an argument **age**.
+In this example, `method2` is a static method of the `myClass` class that takes an argument `age`.
 
 ## 3 Constructor (`__init__`)
+
+The `__init__` method is a special method in Python classes that is called when an object is created from the class and it initializes the object's attributes. The `__init__` method has a `self` parameter which refers to the object being created and allows the object to access its own attributes and methods. Here is an example of a class with an `__init__` method:
+
 ```
-def __init__(self):
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
 ```
 
-The __init__ method is a special method in Python classes that is called when an object is created from the class and it initializes the object's attributes. The __init__ method has a self parameter which refers to the object being created and allows the object to access its own attributes and methods. Here is an example of a class with an __init__ method:
-
-
+In the example above, the `__init__` method takes two arguments, `name` and `age`, which are used to initialize the `name` and `age` attributes of the `Person` object. The `greet` method can be called on a `Person` object to print a greeting message that includes the `name` and `age` attributes of the object.
 
 ## 4 Inheritance
+
+Inheritance is a way to create a new class that is a modified version of an existing class. The new class is called a **subclass** or **derived class**, and the original class is called the **superclass** or **base class**. The subclass inherits all the attributes and methods of the superclass, and can also add its own attributes and methods.
+
 ```
-class human(object):
-    pass
-   
-class boy(human):
-    pass
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    
+    def eat(self):
+        print(f"{self.name} is eating")
+
+class Dog(Animal):
+    def bark(self):
+        print(f"{self.name} is barking")
 ```
+
+In this example, `Dog` is a subclass of `Animal`. It inherits the `__init__` method from `Animal`, which initializes the `name` attribute. It also inherits the `eat` method, which prints that the animal is eating. However, it adds its own method, `bark`, which prints that the dog is barking.
+
 ## 5 Encapsulation
 
+Encapsulation is the idea of bundling data and methods that operate on that data within a single unit, called a **class**. The data is hidden from the outside world and can only be accessed through methods that are defined in the class. This helps to ensure that the data is used correctly and consistently.
+
+```
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance
+    
+    def deposit(self, amount):
+        self.__balance += amount
+    
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+        else:
+            print("Insufficient funds")
+    
+    def get_balance(self):
+        return self.__balance
+```
+
+In this example, `BankAccount` is a class that encapsulates the data of a bank account. The `balance` attribute is marked as private by adding two underscores before the name. This means that it can only be accessed from within the class, and not from outside. The `deposit`, `withdraw`, and `get_balance` methods are defined to operate on the `balance` attribute. They are the only way to modify or access the `balance` attribute, ensuring that it is used correctly and consistently.
+
 ## 6 Polymorphism
+Polymorphism is the ability of an object to take on many forms. In Python, this is often implemented through "duck typing", where the type of an object is determined by the methods it has, rather than its class or type. This allows different objects to be used interchangeably in code, as long as they have the same methods.
+
+```
+class Cat:
+    def sound(self):
+        print("Meow")
+    
+class Dog:
+    def sound(self):
+        print("Woof")
+
+def make_sound(animal):
+    animal.sound()
+
+cat = Cat()
+dog = Dog()
+
+make_sound(cat)  # Output: "Meow"
+make_sound(dog)  # Output: "Woof"
+```
+
+In this example, `Cat` and `Dog` are two different classes with the same method name, `sound`. The `make_sound` function takes an object as an argument and calls its `sound` method. It doesn't matter whether the object is a `Cat` or a `Dog` – as long as it has a `sound` method, it can be passed to the function. This is an example of polymorphism, where different objects can be used interchangeably as long as they have the same methods.
 
