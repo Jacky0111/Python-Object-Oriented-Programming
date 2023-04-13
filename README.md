@@ -71,12 +71,34 @@ class Employee:
 
 ## 1 Class
 ### 1.1 What is Class?
+A class in object-oriented programming is a blueprint or a template for creating objects that have similar attributes and behaviors. It is a fundamental concept in object-oriented programming that allows you to define your own data type.
+
+In Python, you can define a class using the class keyword followed by the name of the class. Here's an example:
 ```
-class myClass():
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print("Hello, my name is", self.name, "and I am", self.age, "years old.")
+```
+In the above example, we have defined a class named Person that has two attributes, name and age, and a method greet() that prints out a greeting message. 
+
+Once a class has been defined, you can create objects or instances of that class by calling the class constructor. Here's an example:
+
+```
+person1 = Person("Alice", 25)
+person2 = Person("Bob", 30)
+
+person1.greet() # Output: Hello, my name is Alice and I am 25 years old.
+person2.greet() # Output: Hello, my name is Bob and I am 30 years old.
 ```
 
 ## 2 Method
 ### 2.1 What is Method?
+In Python, a method is a function that belongs to an object. It is defined within the class and can be called on an instance of the class. The first argument of the method is usually self, which refers to the instance of the class that is calling the method. Here is an example:
+
 ```
 class myClass():
     def method1(self):
@@ -86,24 +108,38 @@ class myClass():
         print('This is method 2")
 ```
 
+In this example, **method1** and **method2** are methods of the **myClass** class.
+
 ### 2.2 Class Method
+
+A class method is a method that is bound to the class and not the instance of the class. It takes the class as its first argument, usually named cls, instead of self. It can be defined using the **@classmethod** decorator. Here is an example:
+
 ```
 @classmethod
 def method1(cls, age):
-    pass
+    print('This is method 1 and the age is', age)
 ```
+
+In this example, **method1** is a static method of the **myClass** class that takes an argument **age**.
+
 ### 2.3 Static Method
 ```
 @staticmethod
 def method2(age):
-    pass
+    print('This is method 2 and the age is', age)
 ```
 
+In this example, **method2** is a static method of the **myClass** class that takes an argument **age**.
 
 ## 3 Constructor (`__init__`)
 ```
 def __init__(self):
 ```
+
+The __init__ method is a special method in Python classes that is called when an object is created from the class and it initializes the object's attributes. The __init__ method has a self parameter which refers to the object being created and allows the object to access its own attributes and methods. Here is an example of a class with an __init__ method:
+
+
+
 ## 4 Inheritance
 ```
 class human(object):
