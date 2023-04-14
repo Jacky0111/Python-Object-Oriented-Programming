@@ -1,3 +1,10 @@
+"""
+This program defines a class hierarchy with two classes: Animal and Cat. The Cat class is a subclass of Animal and
+overrides the speak method to print the sound a cat makes. An instance of the Cat class is created with the name
+"Fluffy" and its speak method is called, resulting in the output "Fluffy meows."
+"""
+
+
 class Animal:
     def __init__(self, name):
         self.name = name
