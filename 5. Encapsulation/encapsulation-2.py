@@ -1,3 +1,20 @@
+"""
+This code defines two classes, Book and Library. The Library class represents a library, which has a list of
+books that can be added, removed, and searched. The Book class represents a book, with a title, author, and year of
+publication.
+
+The Library class has methods to add and remove books, and to search for a book by its title. The Book class has a
+__repr__ method that returns a string representation of the book.
+
+The code creates a Library object with three books and adds a fourth book using the add_book method. It then searches
+for a book by its title using the search_book method, and removes a book that is not in the library (which raises a
+ValueError).
+
+The output of the code is the book found by the search (1984 by George Orwell), followed by a ValueError because the
+book being removed (The Great Gatsby) is not in the library.
+"""
+
+
 class Library:
     def __init__(self, books):
         self._books = books
@@ -37,7 +54,6 @@ library.add_book(Book("Pride and Prejudice", "Jane Austen", 1813))
 print(library.search_book("1984"))  # Output:
 
 library.remove_book(Book("The Great Gatsby", "F. Scott Fitzgerald", 1925))  #
-
 
 '''
 Output
