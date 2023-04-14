@@ -1,3 +1,13 @@
+"""
+The code defines three classes, Triangle, Rectangle, and Circle, that inherit from the Shape class, which contains
+an abstract method. Each subclass implements the area method based on their specific shape. The code creates
+instances of the subclasses, stores them in a list, and iterates through the list, calling the area method of each
+instance and printing the name of the shape and its area. The code is well-written and uses inheritance to define
+different shapes with their respective area calculation methods, but it could benefit from error handling for
+negative input values or invalid shapes.
+"""
+
+
 class Shape:
     def __init__(self, name):
         self.name = name
