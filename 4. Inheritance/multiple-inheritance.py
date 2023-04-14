@@ -1,3 +1,14 @@
+"""
+This code defines a class hierarchy for shapes and colors. The Shape class has a method for computing the area,
+while the Color class has an attribute for storing the color. The ColoredShape class is a combination of Shape and
+Color, and has a method for describing the shape with its color and area. Finally, the Square class is a specific
+type of ColoredShape that computes its area based on its side length.
+
+The code creates a Square instance with side length 5 and color "red", and calls its describe() method to print out
+its description, including its area. The output is "This is a red square with an area of 25.
+"""
+
+
 class Shape:
     def __init__(self, name):
         self.name = name
