@@ -1,3 +1,11 @@
+"""
+The code defines a Book class with four attributes and two methods: price_per_page() and discount(percent). Two
+instances of the Book class are created, and their details and price per page are printed. A discount of 20% is
+applied to book1, and the new price is printed. The code is well-written and easy to understand but could benefit
+from additional methods and error handling.
+"""
+
+
 class Book:
     def __init__(self, title, author, pages, price):
         self.title = title
@@ -9,7 +17,7 @@ class Book:
         return self.price / self.pages
 
     def discount(self, percent):
-        self.price *= (1 - percent/100)
+        self.price *= (1 - percent / 100)
 
 
 book1 = Book("The Great Gatsby", "F. Scott Fitzgerald", 180, 12.99)
@@ -23,7 +31,6 @@ print(f"Price per page: ${book2.price_per_page():.4f}")
 
 book1.discount(20)
 print(f"New price for {book1.title}: ${book1.price:.2f}")
-
 
 '''
 Output
